@@ -22,13 +22,16 @@ function Cardstat() {
                             <h5>piyush@yourmail.com</h5>
                         </div>
                         <div className="user_designation">
-                            <button className='btn btn-primary'>ADMIN</button>
                         </div>
                     </div>
-                    <div className="circle_decor1"></div>
-                    <div className="circle_decor2"></div>
-                    <div className="circle_decor3"></div>
                 </div>
+                <button id='btn_go' className='btn btn-primary'>
+                    <p className='m-1'>
+                    <i className="fa-solid fa-forward fa-fade fa-xl col-4" style={{color: "#ffffff;"}}></i>
+                        START
+                    <i className="fa-solid fa-forward fa-fade fa-xl col-4" style={{color: "#ffffff;"}}></i>
+                    </p>
+                </button>  
             </div>
    
         </div>
