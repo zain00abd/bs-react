@@ -1,7 +1,14 @@
 
+import { type } from 'os';
 import './card.css'
+import Link from 'next/link';
 
-function Cardstat() {
+type disimal = {
+    title:String,
+    parag?:String,
+}
+
+function Cardstat( {title,parag}:disimal ) {
   return (
 
 <div className="container-fluid">
@@ -13,27 +20,27 @@ function Cardstat() {
                     </div>
                     <div className="user_details">
                         <div className="user_profile_name">
-                            <h5>Piyush Bansal</h5>
-                        </div>
-                        <div className="user_profile_userID">
-                            <h5>User ID:<span> Piyush96</span></h5>
+                            <h5>{title}</h5>
                         </div>
                         <div className="user_profile_mail">
-                            <h5>piyush@yourmail.com</h5>
-                        </div>
-                        <div className="user_designation">
+                            <h3>{parag}</h3>
                         </div>
                     </div>
                 </div>
-                <button id='btn_go' className='btn btn-primary'>
+                <div className="progress" style={{height:"3px"}}>          
+                <div className="progress-bar progress-bar-striped bg-success" style={{ width:"50%"}}></div>
+                </div>
+                    <Link href="/Haloo">
+                    <button id='btn_go' className='btn btn-success'>
                     <p className='m-1'>
                     <i className="fa-solid fa-forward fa-fade fa-xl col-4" style={{color: "#ffffff;"}}></i>
                         START
                     <i className="fa-solid fa-forward fa-fade fa-xl col-4" style={{color: "#ffffff;"}}></i>
                     </p>
                 </button>  
+                    </Link>
+
             </div>
-   
         </div>
     </div>
 

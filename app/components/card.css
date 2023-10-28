@@ -1,15 +1,16 @@
 
 
-
 .user_profile_card {
-    background:linear-gradient(rgb(0, 73, 70),rgb(0, 141, 63));
+    direction: rtl;
+    background:linear-gradient(to right,rgba(43, 221, 12, 0.192),rgba(99, 212, 193, 0.274));
     margin-top: 30px;
     padding: 16px 8px;
-    box-shadow: 5px 5px 10px #4d4d4d17, -5px -5px 10px #4545450e;
+    box-shadow: 5px 5px 10px #0f0c0c17, -5px -5px 10px #2222220e;
     display: flex;
     position: relative;
     border-top-left-radius:6px ;
     border-top-right-radius:6px ;
+    color: black;
 }
 .user_profile_card .user_profile_img {
     border-radius: 50%;
@@ -30,32 +31,23 @@
 }
 .user_details .user_profile_name h5{
     font-size: 20px;
-    color: #fff;
+
     margin-bottom: 5px;
 }
 .user_details .user_profile_userID h5{
     font-size: 14px;
-    color: #a1fadc;
+
     margin-bottom: 5px;
 }
 .user_details .user_profile_userID h5 span{
     font-weight: 400;
-    color: #ffffff;
+
 }
-.user_details .user_profile_mail h5{
-    font-size: 14px;
-    font-weight: 400;
-    color: #b6ffe7;
-    margin-bottom: 14px;
+.user_details .user_profile_mail h3{
+    font-size: 15px;
+
 }
-.user_details .user_designation h5{
-    font-size: 12px;
-    background-color: #c3ffeb;
-    color: #00885a;
-    padding: 2px 8px;
-    border-radius: 12px;
-    display: inline;
-}
+
 #btn_go{
     width: 100%;
     border-top-left-radius:0px ;
