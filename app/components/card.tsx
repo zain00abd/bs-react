@@ -1,5 +1,4 @@
 
-import { type } from 'os';
 import './card.css'
 import Link from 'next/link';
 
