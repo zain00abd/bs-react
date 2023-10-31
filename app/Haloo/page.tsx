@@ -5,12 +5,7 @@ function Halo() {
     return (
         <>
             <nav className="navbar bg-body-tertiary">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        <img src="./photo/xz1.png" alt="Logo" width="50" height="50" className="d-inline-block " />
-                        OY Goethe
-                    </a>
-                </div>
+
             </nav>
             <div className="container ">
                 <div className="row-g" style={{ width: "75%", marginLeft: "13%", marginTop: "15px" }}>
