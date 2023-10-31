@@ -3,25 +3,3 @@
     
 }
 
-
-/* إخفاء عناصر التحكم */
-#myVideo::-webkit-media-controls {
-
-}
-
-/* تحديد خصائص للفيديو نفسه */
-#myVideo {
-
-    border: 2px solid #333;
-    background-color: #000;
-    color: #fff;
-}
-
-#myVideo::-webkit-media-controls-current-time-display,
-#myVideo::-webkit-media-controls-time-remaining-display {
-    color: transparent;
-}
-
-#myVideo::-webkit-media-controls-elapsed-time {
-    display: none;
-}
