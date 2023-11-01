@@ -1,27 +1,30 @@
+"use client"
 
-import "./page.css"
-
-function Halo() {
-    return (
-        <>
-            <nav className="navbar bg-body-tertiary">
-                <div className="container-fluid">
-                </div>
-            </nav>
-            <div className="container ">
-                <div className="row-g" style={{ width: "75%", marginLeft: "13%", marginTop: "15px" }}>
-                    <div className="card col-12">
-                        <div className="card-body">
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-
-    )
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
+function GridExample() {
+  return (
+    <Row xs={1} md={2} className="g-4">
+      {Array.from({ length: 1 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card>
+            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  );
 }
 
-export default Halo;
+export default GridExample;
