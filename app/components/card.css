@@ -57,3 +57,10 @@
 #btn_go p{
     font-weight: 600;
 }
+
+#cardz{
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
