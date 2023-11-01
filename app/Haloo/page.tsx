@@ -3,15 +3,16 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import "./page.css"
 
 
 function GridExample() {
   return (
-    <Row xs={1} md={2} className="g-4">
+    <Row  className=" g-4 mt-1" id="cardz">
       {Array.from({ length: 1 }).map((_, idx) => (
         <Col key={idx}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <video controls src='https://cdn.busuu.com/media-resources/video/mp4/fb464cc9-8a5b-4548-9bac-a42fae718f42_small.mp4'/>
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
