@@ -63,4 +63,40 @@
     justify-content: center;
     width: 80%;
     margin: auto;
+    text-align: center;
+
+}
+
+#card_body{
+    position: relative;
+    z-index: 5;
+    margin-top: -32px;
+    height: 100px;
+    background-color: rgb(214, 253, 234);
+}
+
+button{
+    color: black;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    #cardz{
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    #cardz{
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
 }
